@@ -1,0 +1,112 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "name": "Lobster",
+      "description": "A delicious Meal.",
+      "price": 15.99,
+      "image": "./images/lobster.jpg",
+      "favorite": true,
+      "category": "starter"
+    },
+    {
+      "id": "2",
+      "name": "Wings",
+      "description": "A delicious Meal.",
+      "price": 12.99,
+      "image": "./images/wings.jpg",
+      "favorite": true,
+      "category": "starter"
+    },
+    {
+      "id": "3",
+      "name": "Calamari",
+      "description": "A delicious Meal.",
+      "price": 14.99,
+      "image": "./images/calamari.jpg",
+      "favorite": false,
+      "category": "starter"
+    },
+    {
+      "id": "4",
+      "name": "Steak",
+      "description": "Grilled to perfection, served with vegetables.",
+      "price": 25.99,
+      "image": "./images/steak.jpg",
+      "favorite": false,
+      "category": "main"
+    },
+    {
+      "id": "5",
+      "name": "Salmon",
+      "description": "Oven-baked salmon with a herb crust, accompanied by a lemon butter sauce.",
+      "price": 22.99,
+      "image": "./images/salmon.jpg",
+      "favorite": true,
+      "category": "main"
+    },
+    {
+      "id": "6",
+      "name": "Pasta",
+      "description": "Your choice of pasta with a rich and creamy Alfredo sauce.",
+      "price": 18.99,
+      "image": "./images/pasta.jpg",
+      "favorite": false,
+      "category": "main"
+    },
+    {
+      "id": "7",
+      "name": "Cheesecake",
+      "description": "Rich and creamy cheesecake topped with a fresh strawberry sauce.",
+      "price": 7.99,
+      "image": "./images/cheesecake.jpg",
+      "favorite": false,
+      "category": "dessert"
+    },
+    {
+      "id": "8",
+      "name": "Chocolate Cake",
+      "description": "Decadent chocolate cake with layers of rich chocolate frosting.",
+      "price": 8.99,
+      "image": "./images/chocolate-cake.jpg",
+      "favorite": false,
+      "category": "dessert"
+    },
+    {
+      "id": "9",
+      "name": "Tiramisu",
+      "description": "Classic Italian dessert with espresso-soaked ladyfingers and mascarpone cheese.",
+      "price": 9.99,
+      "image": "./images/tiramisu.jpg",
+      "favorite": false,
+      "category": "dessert"
+    },
+    {
+      "id": "10",
+      "name": "Coffee",
+      "description": "Freshly brewed coffee, available in regular or decaf.",
+      "price": 2.99,
+      "image": "./images/coffee.jpg",
+      "favorite": false,
+      "category": "beverage"
+    },
+    {
+      "id": "11",
+      "name": "Green Tea",
+      "description": "Antioxidant-rich green tea, served hot or iced.",
+      "price": 3.5,
+      "image": "./images/green-tea.jpg",
+      "favorite": false,
+      "category": "beverage"
+    },
+    {
+      "id": "12",
+      "name": "Smoothie",
+      "description": "A blend of fresh fruits, yogurt, and honey. Choice of flavors available.",
+      "price": 5.99,
+      "image": "./images/smoothie.jpg",
+      "favorite": false,
+      "category": "beverage"
+    }
+  ]
+}

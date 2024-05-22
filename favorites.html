@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant Menu</title>
+    <title>Restaurant Menu - Favorites</title>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -39,6 +39,9 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#starters">Today's Starters</a>
             </li>
             <li class="nav-item">
@@ -54,7 +57,7 @@
               <a class="nav-link" href="#beverages">Beverages</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="favorites.html">Favorites</a>
+              <a class="nav-link" href="#">Favorites</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -64,28 +67,12 @@
       </div>
     </nav>
 
-    <!-- Starters Section -->
-    <section id="starters" class="menu-section container">
-      <h2 class="mb-4">Today's Starters</h2>
-      <div class="row"></div>
-    </section>
-
-    <!-- Main Courses Section -->
-    <section id="main-courses" class="menu-section container">
-      <h2 class="mb-4">Main Courses</h2>
-      <div class="row"></div>
-    </section>
-
-    <!-- Desserts Section -->
-    <section id="desserts" class="menu-section container">
-      <h2 class="mb-4">Desserts</h2>
-      <div class="row"></div>
-    </section>
-
-    <!-- Beverages Section -->
-    <section id="beverages" class="menu-section container">
-      <h2 class="mb-4">Beverages</h2>
-      <div class="row"></div>
+    <!-- Favorites Section -->
+    <section id="favorites" class="menu-section container">
+      <h2 class="mb-4">Your Favorites</h2>
+      <div class="row" id="favorite-recipes">
+        <!-- Favorite recipes will be loaded here dynamically using JavaScript -->
+      </div>
     </section>
 
     <!-- Footer -->

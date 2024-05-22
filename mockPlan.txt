@@ -1,0 +1,43 @@
+Components
+Navbar
+Contains navigation links to different sections of the menu.
+Includes a link to the "Favorites" page.
+Sections
+Today's Starters
+Today's Specials
+Main Courses
+Desserts
+Beverages
+Recipe Card
+Image of the dish.
+Name of the dish.
+Description of the dish.
+Price of the dish.
+Favorite button (heart icon).
+Delete button.
+Pages
+Index Page
+
+Displays all menu items categorized into sections.
+Allows users to mark dishes as favorites and delete dishes.
+Favorites Page
+
+Displays only the favorite dishes.
+Allows users to unmark favorites and delete dishes.
+Functionality
+View Menu
+
+Users can view all menu items on the index page.
+Menu items are categorized into sections (Starters, Main Courses, Desserts, Beverages).
+Mark as Favorite
+
+Users can mark/unmark dishes as favorites by clicking the heart icon.
+Favorite dishes are highlighted with a filled heart icon.
+Delete Dish
+
+Users can delete dishes from the menu by clicking the delete button.
+Deleted dishes are removed from the menu and the server.
+View Favorites
+
+Users can view their favorite dishes on the Favorites page.
+Favorite dishes can be unmarked or deleted from the Favorites page.
