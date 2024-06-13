@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New Recipe</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts.js"></script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Restaurant Name</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="favorites.html">Favorites</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Add New Recipe Section -->
+    <section id="add-recipe" class="menu-section container mt-5 pt-5">
+      <h2 class="mb-4">Add New Recipe</h2>
+      <form id="add-recipe-form">
+        <div class="mb-3">
+          <label for="recipe-name" class="form-label">Recipe Name</label>
+          <input type="text" class="form-control" id="recipe-name" required />
+        </div>
+        <div class="mb-3">
+          <label for="recipe-description" class="form-label">Description</label>
+          <input
+            type="text"
+            class="form-control"
+            id="recipe-description"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="recipe-price" class="form-label">Price</label>
+          <input
+            type="number"
+            class="form-control"
+            id="recipe-price"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="recipe-image" class="form-label">Image URL</label>
+          <input type="text" class="form-control" id="recipe-image" required />
+        </div>
+        <div class="mb-3">
+          <label for="recipe-category" class="form-label">Category</label>
+          <select class="form-control" id="recipe-category" required>
+            <option value="starter">Starter</option>
+            <option value="main">Main</option>
+            <option value="dessert">Dessert</option>
+            <option value="beverage">Beverage</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Recipe</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <span>&copy; 2024 Restaurant Name</span>
+      </div>
+    </footer>
+
+    <script>
+      $(document).ready(function () {
+        const API_URL = "http://localhost:3000/recipes";
+
+        // Handle form submission to add a new recipe
+        $("#add-recipe-form").submit(function (event) {
+          event.preventDefault();
+
+          const newRecipe = {
+            name: $("#recipe-name").val(),
+            description: $("#recipe-description").val(),
+            price: parseFloat($("#recipe-price").val()),
+            image: $("#recipe-image").val(),
+            favorite: false,
+            category: $("#recipe-category").val(),
+          };
+
+          $.ajax({
+            url: API_URL,
+            method: "POST",
+            contentType: "application/json",
+            data: JSON.stringify(newRecipe),
+            success: function () {
+              alert("Recipe added successfully!");
+              $("#add-recipe-form")[0].reset();
+            },
+            error: function (xhr, status, error) {
+              console.error("Error adding new recipe:", error);
+            },
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
