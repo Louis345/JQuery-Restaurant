@@ -1,34 +1,13 @@
-.menu-item .card-img-top {
-  height: 200px;
-  object-fit: cover;
-  width: 100%;
-}
+/* Add your custom styles here */
 
-.menu-item {
-  margin-bottom: 30px;
-}
+/* Navbar styles */
+/* Add your navbar styles here */
 
-.menu-section {
-  padding: 40px 0;
-}
+/* Menu Section styles */
+/* Add styles for the menu sections here */
 
-.footer {
-  background-color: #f8f9fa;
-  padding: 20px 0;
-  text-align: center;
-}
+/* Card styles */
+/* Add styles for the cards here */
 
-body {
-  padding-top: 56px;
-}
-.menu-item {
-  margin-bottom: 30px;
-}
-.menu-section {
-  padding: 40px 0;
-}
-.footer {
-  background-color: #f8f9fa;
-  padding: 20px 0;
-  text-align: center;
-}
+/* Footer styles */
+/* Add styles for the footer here */
