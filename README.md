@@ -28,8 +28,8 @@ Follow these instructions to set up the project locally.
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/restaurant-menu.git
-   cd restaurant-menu
+   git clone https://github.com/your-username/JQuery-Restaurant.git
+   cd JQuery-Restaurant
    ```
 
 2. **Install the dependencies:**
